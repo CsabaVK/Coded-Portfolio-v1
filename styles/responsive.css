@@ -1,0 +1,39 @@
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Reduce size on smaller screens */
+    }
+
+    nav ul li:last-child a, nav ul li:nth-last-child(2) a {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 0.9rem; /* Reduce button font size */
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        max-width: 100%;
+    }
+
+    .profile-img {
+        margin-top: 20px;
+    }
+
+    .profile-img img {
+        width: 200px; /* Smaller image for mobile */
+    }
+}
